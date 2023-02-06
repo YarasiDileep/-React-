@@ -1,3 +1,4 @@
+import React, { Component } from 'react'    
 import Navbar from './Navbar/Navbar'
 import Message from './FuninStateEx/Message'
 import Counter from './FuninStateEx/Counter'
@@ -8,14 +9,14 @@ import Salary from './Salary/Salary'
 import Login from './FormRendering/Login'
 import Registration from './FormRendering/Registration'
 import User from './Axios/User'
-
-function App (){
-    return <div>
-        <Navbar/>
-        <h1>User Data</h1>
-        <hr/>
-        <User/>
-     </div>
-  
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <h1>App Component</h1>
+      </div>
+    )
+  }
 }
+
 export default App

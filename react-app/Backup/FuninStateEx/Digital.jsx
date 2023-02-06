@@ -1,11 +1,13 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
+
 function Digital(){
     let[CurrentTime, setCurrentTime] = useState(new Date().toLocaleTimeString())
 
-    setInterval(()=>{
-        setCurrentTime(CurrentTime = new Date().toLocaleTimeString())
-    },[1000])
-    return  <div className="container">
+        setInterval(()=>{
+            setCurrentTime(CurrentTime = new Date().toLocaleTimeString())
+        },[1000])
+    }
+    return  <div className="container mt-5">
                 <div className="row">
                     <div className="col-4">
                         <div className="card">
@@ -19,5 +21,5 @@ function Digital(){
                     </div>
                 </div>
             </div>
-}
+
 export default Digital
